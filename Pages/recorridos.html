@@ -6,36 +6,41 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BodeGuíar</title>
-        <link rel="shortcut icon" href="../Imagenes/autoIcon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./Imagenes/autoIcon.png" type="image/x-icon">
         <link rel="stylesheet" href="../CSS/reset.css">
+        <!-- CSS bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- CSS Propio -->
         <link rel="stylesheet" href="../CSS/Style.css">
-
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     
     <body>
         <header id="header">
             
            
-
+            
             <div class="imgLogo">
-                <img src="../Imagenes/BodeguiarIcon.png" alt="logo">
-
+                    <img src="../Imagenes/Icon/BodeguiarIcon.png" alt="logo">
+    
             </div>
-
+    
             <div class="menuSuperior">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Home <span>|</span></a></li>
-                        <li><a href="./recorridos.html">Recorridos <span>|</span></a></li>
-                        <li><a href="./cotizar.html">Cotizar servicio <span>|</span></a></li>
-                        <li><a href="./nosotros.html">Nosotros <span>|</span></a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="../index.html">Home <span>|</span></a></li>
+                            <li><a href="./recorridos.html">Recorridos <span>|</span></a></li>
+                            <li><a href="./cotizar.html">Cotizar servicio <span>|</span></a></li>
+                            <li><a href="./nosotros.html">Nosotros <span>|</span></a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
             </div>
-
+            
+            
+            
             <div class="imagenLogoSup">
-                <img class="imagenLogo" src="../Imagenes/Icon.jpeg" alt="imagenLogo">
+                <img class="imagenLogo" src="../Imagenes/Icon/Icon.jpeg" alt="imagenLogo">
             </div>
 
             <div class="textoLogo">
@@ -46,27 +51,82 @@
 
         <main id="recorridos">
 
-            <h1 class="titulo">Recorridos</h1>
-            <p class="reseñaBodega">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, a.</p>
+
+            <div class="container">
+                <h1 class="titulo">Recorridos</h1>
+            </div>
+
+            <div class="container">
+                <p class="reseñaBodega">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, a.</p>
+            </div>
+            
+            
         </main>
 
         <section class="circuito">
-            <h3>Caminos del vino Pedriel</h3>
-            <img class="imgCircuito" src="../Imagenes/Ruta del vino/Lujan.jpg" alt="lujan">
-            <p class="textRigth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam amet quam, inventore assumenda atque earum provident a similique nisi voluptates excepturi id ad omnis architecto consequuntur fuga aliquam fugit!</p>
-        </section>
-        <section class="circuito">
-            <h3>Caminos del vino Valle de Uco</h3>
-            <img class="imgCircuito" src="../Imagenes/Ruta del vino/cropped-andeluna-scaled-1.jpeg" alt="velleUco">
-            <p class="textRigth">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa iusto eius cum optio molestias, impedit totam distinctio iste temporibus cupiditate dignissimos non aspernatur fugit, deleniti laudantium velit sunt, recusandae provident?</p>
-        </section>
-        <section class="circuito">
-            <h3>Caminos del vino Maipu</h3>
-            <img class="imgCircuito" src="../Imagenes/Ruta del vino/Maipu.jpg" alt="maipu">
-            <p class="textRigth">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus accusantium qui dignissimos fuga omnis esse dolore illo laudantium quam iusto, quo quasi consectetur iste rem ea? Natus eos iure quis.</p>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <h3 class="text-center pt-5">Caminos del vino Pedriel</h3>
+                    <div class="col-md-4 p-3">
+                        
+                        <img class="imgCircuito" src="../Imagenes/Ruta del vino/Lujan.jpg" class="img-fluid"     alt="lujan">
+                    </div>
+                    <div class="col-md-8 p-3">
+                        <p class="text-start py-5 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam amet quam, inventore assumenda atque earum provident a similique nisi voluptates excepturi id ad omnis architecto consequuntur fuga aliquam fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugit dolor saepe quis officiis omnis necessitatibus tempore quam perferendis voluptas labore ea ipsa assumenda animi quasi, debitis repudiandae aut doloremque!</p>
+
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <p class="proximamente">Próximamente más experiencias</p>
+
+        <section class="circuito">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <h3 class="text-center">Caminos del vino Valle de Uco</h3>
+                    <div class="col-md-4 p-3">
+                        
+                        <img class="imgCircuito" src="../Imagenes/Ruta del vino/valle-uco.jpeg" class="img-fluid" alt="velleUco">
+                    </div>
+
+                    <div class="col-md-8 p-3">
+                        <p class="text-start py-5 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam amet quam, inventore assumenda atque earum provident a similique nisi voluptates excepturi id ad omnis architecto consequuntur fuga aliquam fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugit dolor saepe quis officiis omnis necessitatibus tempore quam perferendis voluptas labore ea ipsa assumenda animi quasi, debitis repudiandae aut doloremque!</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </section>
+
+        <section class="circuito">
+
+
+            <div class="container-fluid">
+                <div class="row">
+                    <h3 class="text-center">Caminos del vino Maipu</h3>
+                    <div class="col-md-4 p-3">
+                        
+                        <img class="imgCircuito" src="../Imagenes/Ruta del vino/Maipu.jpg" class="img-fluid" alt="maipu">
+                    </div>
+
+                    <div class="col-md-8 p-3">
+                        <p class="text-start py-5 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laboriosam amet quam, inventore assumenda atque earum provident a similique nisi voluptates excepturi id ad omnis architecto consequuntur fuga aliquam fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugit dolor saepe quis officiis omnis necessitatibus tempore quam perferendis voluptas labore ea ipsa assumenda animi quasi, debitis repudiandae aut doloremque!</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div>
+            <p class="proximamente">Próximamente más experiencias</p>
+        </div>
+        
 
         <footer id="footer">
             <nav class="menuInferior">
@@ -80,13 +140,16 @@
             </nav>
 
             <div class="imagenLogoFoot">
-                <img src="../Imagenes/Icon.jpeg" alt="Logo">
+                <img src="../Imagenes/Icon/Icon.jpeg" class="img-fluid" alt="Logo">
             </div>
 
             <p class="gracias">- Muchas gracias por visitarnos -</p>
 
             <div class="copy">
-                <p>Copyrigth</p>
+                <small><b>&copy;Copyright 2022 </b>- Lucas Abrigo -</small>
+                <div class="derechos">
+                    <small>- Todos los derechos reservados -</small>
+                </div>
             </div>
 
         </footer>

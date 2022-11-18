@@ -15,6 +15,8 @@
 }
 
 .imgLogo{
+    display: flex;
+    width: 100%;
     padding-left: 3%;
     align-self:center;
 }
@@ -65,7 +67,7 @@ body{
    /*  background-color:rgb(37, 39, 34); */
     width: 100%;
     color: white;
-    background-image: url(../Imagenes/bg.jpg);
+    background-image: url(../Imagenes/background/bg.jpg);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -104,41 +106,35 @@ body{
 }
 
 .tituloServicio{
-    color:crimson;
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-image: url(../Imagenes/bg.jpg);
+    padding: 3% 0%;
 }
 
-.imgCopas{
+.imgChofer{
     grid-column: 1/2;
     justify-self: center;
+    padding-left: 5%;
 
 }
 
-.textoCopas{
+.textoChofer{
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
     padding: 5% 20% 20% 20%;
+    
 }
 
 
-.chofer{
-    grid-column: 2/3;
-}
-
-.textoChofer{
+.textoCopas{
    grid-column: 1/2; 
    justify-self: center;
    align-self: center;
    padding: 5% 20% 20% 20%;
 }
-.imgChofer{
+.imgCopas{
     justify-self: center;
-    padding-bottom: 5%;
-    padding-right: 5%;
+    padding: 5%;
 }
 
 /* Footer */
@@ -153,15 +149,15 @@ body{
 }
 
 nav.menuInferior{
-    padding-top: 50px;
+    padding-top: 5%;
 }
 
 nav.menuInferior ul li a{
     text-decoration: none;
     color: white;
     width: 100%;
-    height: 20px;
-    padding-top: 50px;
+    height: auto;
+    padding-top: 5%;
 }
 nav.menuInferior ul li a span{
     font-size: 25px;
@@ -204,24 +200,16 @@ p.gracias{
     text-align: center;
 
 }
-.textRigth{
-    width: 30%;
-    height: 20%;
-    display: block;
-    text-align: right;
-    margin-left: 50%;
-    padding: 20px;
-}
 
 .circuito .imgCircuito{
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: auto;
 }
 
 .proximamente{
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 3%;
+    padding-bottom: 3%;
 
 }
 
@@ -349,4 +337,12 @@ form{
 }
 
 
+
+/* Responsive */
+
+@media (min-width:425px) and (max-width:768px) {
+	#header .menuSuperior{
+        justify-items: stretch;
+    }
+}
 
