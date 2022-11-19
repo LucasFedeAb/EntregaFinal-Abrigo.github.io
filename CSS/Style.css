@@ -84,6 +84,7 @@ body{
     letter-spacing: 5rem;
     font-size: 5rem;
 }
+
 .carousel-caption h5:hover{
     color: gainsboro
 
@@ -359,6 +360,7 @@ form{
         width: 50%;
         justify-content: space-around;
     }
+
     #servicio{
         grid-template-columns: 1fr;
         grid-template-rows: (4,1fr);
@@ -382,6 +384,14 @@ form{
     }
 
 }
+
+@media (max-width:1200px){
+   h5.TituloPrincipal{
+        font-size: 1rem;
+        font-weight: bold;
+   }
+}
+
 
 
 
