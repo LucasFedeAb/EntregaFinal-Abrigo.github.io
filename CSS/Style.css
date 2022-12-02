@@ -22,18 +22,20 @@ img.imgLogo{
     width: auto;
     padding: 1%;
 }
+
+
 .menuSuperior{
-    font-size: 15px;
+    font-size: 1rem;
     justify-self: end;
     align-self:center;
     padding-right: 3%;
-    padding-top: 3%;
+    padding-top: 2%;
     
 }
 
 ul li{
     display: inline;
-    letter-spacing: 4px;
+    letter-spacing: 0.25rem;
 }
 
 #header .menuSuperior ul li a{
@@ -48,7 +50,7 @@ ul li{
 }
 
 nav.menuSuperior ul li a span{
-    font-size: 25px;
+    font-size: 3rem;
     color: white;
 }
 
@@ -63,14 +65,21 @@ nav.menuSuperior ul li a span{
     width: auto;
 
 }
+.textoLogo{
+    margin: 1%;
+    text-align: center;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    padding: 1%;
+}
 
 /* body index */
 body{
    /*  background-color:rgb(37, 39, 34); */
     width: 100%;
     color: white;
-    background-image: url(../Imagenes/background/bg.jpg);
     font-family: 'Montserrat', sans-serif;
+    background-image: url(../Imagenes/background/bg.jpg);
 }
 
 #portada{
@@ -91,7 +100,7 @@ body{
 }
 .winery{
     
-    font-size: 30px;
+    font-size: 2rem;
     letter-spacing: 2rem;
     padding-top: 1rem;
 }
@@ -101,16 +110,17 @@ body{
     display: grid;
     width: 100%;
     height: auto;
-    font-size: 30px;
+    font-size: 2rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2px;
-    
 }
 
 #titulo{
     margin: 2% 5%;
-    background-color: crimson;
+    border: 3px solid;
+    border-radius: 50px;
+    background: radial-gradient(#601382 ,#5a0707 );
 }
 
 
@@ -124,7 +134,6 @@ body{
     grid-column: 1/2;
     justify-self: center;
     padding: 5%;
-
 }
 
 .textoChofer{
@@ -133,20 +142,20 @@ body{
     align-self: center;
     padding-left: 5%;
     padding-right: 5%;
-    
 }
-
 
 .textoCopas{
    grid-column: 1/2; 
    justify-self: center;
    align-self: center;
-   padding-left: 5%;
+   padding: 5%;
 }
 .imgCopas{
     justify-self: center;
     padding: 5%;
+    border-radius: 20px;
 }
+
 
 /* Footer */
 
@@ -171,7 +180,7 @@ nav.menuInferior ul li a{
     padding-top: 5%;
 }
 nav.menuInferior ul li a span{
-    font-size: 25px;
+    font-size: 1.5rem;
     color: white;
 }
 .menuInferior ul li a:hover{
@@ -180,15 +189,15 @@ nav.menuInferior ul li a span{
     
 }
 div.imagenLogoFoot{
-    padding: 20px;
+    padding: 1%;
 }
 
 div.copy{
-    padding: 50px;
+    padding: 2%;
 }
 
 p.gracias{
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing:2px;
 }
 
@@ -200,23 +209,25 @@ p.gracias{
     height: auto;
 }
 .titulo{
-    background-color: crimson;
+    border: 2px solid;
+    border-radius: 50px;
+    background: radial-gradient(#601382 ,#5a0707);
     text-align: center;
-    font-size: 30px;
+    font-size: 2rem;
     margin: 2% 3%;
     padding: 1%;
     font-weight: bold;
     font-style: normal;
-    letter-spacing: 3px;
+    letter-spacing: 0.20rem;
 }
 .reseñaBodega{
     text-align: center;
-
 }
 
 .circuito .imgCircuito{
     width: 100%;
     height: auto;
+    border-radius: 40px;
 }
 
 .proximamente{
@@ -228,57 +239,76 @@ p.gracias{
 
 
 /* Cotizar ruta */
-#cotizar{
-    width: 100%;
-    height: auto;
-    
-}
 
-.tituloCotizar{
-    font-size: 40px;
-    padding: 15px;
+#modalidad{
+    font-size: 2rem;
+    padding: 2%;
     text-align: center;
 }
 
+.reseñaModalidad{
+    font-size: 1.2rem;
+}
+
+#cotizar{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 5%;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    padding: 3%; 
+}
+
 .individual{
-    padding: 15px;
-    text-align: left;
+   grid-column: 1/2;
+   grid-row: 1/2;
 }
 
 .compartido{
-    text-align: right;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-right: 2%;
 }
 
 .tituloModalidad{
-    font-size: 30px;
-    padding: 15px;
+    font-size: 2rem;
+    padding: 5% 2%;
+    text-align: center;
     
 }
 .textoMod{
-    display: inline;
+    grid-column: 1/2;
+    grid-row: 2/3;  
+    padding: 8% 2%;
+    
 }
-.imgIndivudual{
-    width: 450px;
-    height: 320px;
-}
+.textoComp{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 8% 2%;
+}   
 
-.imgCompartido{
+.imgModalidad{
     width: 450px;
     height: 320px;
+    border-radius: 50px;
 }
 
 
 .reservar{
+    padding: 7% 2%;
     text-align: left;
 }
 
 .tituloReserva{
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 30px;
 }
 ul.pasosReserva li{
     display: block;
-    padding: 10px;
+    padding: 1%;
     text-align: left;
     list-style: circle;
     
@@ -291,82 +321,77 @@ li
     height: auto;
 }
 .tituloNosotros{
-    font-size: 30px;
-    padding: 20px;
+    font-size: 2rem;
+    padding: 2%;
     text-align: center;
 }
-
+.padd{
+    width: 100%;
+    height: 50vh;
+}
 
 /* Contacto */
-#contacto{
+
+.calidad{
+    text-align: center;
+    padding: 2%;
+}
+
+#forms{
     width: 100%;
     height: auto;
-    text-align: center;
-}
-
-form{
-    padding-left: 40%;
-
-}
-.tituloCalidad{
-    font-size: 30px;
-    padding: 50px;
-    text-align: center;
-}
-
-.contanos{
-    font-size: 20px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto ;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
     
 }
 
-.formulario{
-    display: block;
-    
+.name{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.email{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.mje{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.boton{
+    grid-row: 4/5;
+    grid-column: 2/3;
 }
 
 .ubicacion{
-    text-align: center;
-    padding: 50px;
-}
-
-.ubicacion h3{
-    font-size: 20px;
-    font-weight: bold;
-    padding: 50px;
-}
-
-.formulario{
-    display: block;
-    padding: 20px;
-    text-align: left;
-}
-
-.formulario .mensaje{
-    display: block;
-    padding-bottom: 10px;
+    margin-top: 10%;
 }
 
 /* Responsive */
 
-@media (min-width:325px) and (max-width:768px) {
+@media (min-width:200px) and (max-width:768px) {
 	
     #logoNav{
         flex-direction: column;
     }
     img.imgLogo{
-        width: 50%;
-        justify-content: space-around;
+        width: 30%;
+        height: 30%;
+        margin: 0% 35%;
     }
 
     #servicio{
         grid-template-columns: 1fr;
-        grid-template-rows: (4,1fr);
+        grid-template-rows: (4,auto);
         gap: 2px;
     }
-    .imgChofer{
+    .imgChofer {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -382,7 +407,7 @@ form{
         grid-column: 1/2;
         grid-row: 4/5;
     }
-
+   
 }
 
 @media (max-width:1200px){
@@ -390,8 +415,49 @@ form{
         font-size: 1rem;
         font-weight: bold;
    }
+
+   #cotizar{
+        grid-template-columns: 1fr;
+        grid-template-rows: (4,auto);
+        gap: 2%;
+    }
+    .individual{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .textoMod{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .compartido{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .textoComp{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    img.imgNosotros{
+        margin: 0% 20%;
+        width: 60%;
+    }
 }
 
+@media (max-width:525px){
+    #forms{
+        grid-template-columns: 1fr;
+    }
+    
+    #multilinea{
+        width: 95%;
 
+    }
 
+    iframe.mapa{
+        width: 80%;
+    }
 
+    .imgModalidad{
+        width: 100%;
+    }
+}
