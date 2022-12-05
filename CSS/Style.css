@@ -3,84 +3,6 @@
     box-sizing: border-box;
 }
 
-#header{
-    background-color: black;
-    height: auto;
-    color: white;
-    gap: 2px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#logoNav{
-    display: flex;
-    width: 100%;
-    height: auto;
-    padding-left: 3%;
-    justify-content: space-between;
-}
-img.imgLogo{
-    width: auto;
-    padding: 1%;
-}
-
-
-.menuSuperior{
-    font-size: 1rem;
-    justify-self: end;
-    align-self:center;
-    padding-right: 3%;
-    padding-top: 2%;
-    
-}
-
-ul li{
-    display: inline;
-    letter-spacing: 0.25rem;
-}
-
-#header .menuSuperior ul li a{
-    text-decoration: none;
-    color: white; 
-    
-}
-#header .menuSuperior ul li a:hover{
-    background-color: #4c4c4c;
-    border: 2px solid #4c4c4c;
-    border-radius: 5px;
-    font-weight: bold;
-    
-}
-
-#header .menuSuperior ul li a:active{
-    
-    font-weight: bold;
-    color: crimson;
-}
-
-nav.menuSuperior ul li a span{
-    
-    font-size: 3rem;
-    color: white;
-}
-
-
-#logoTitulo{
-    display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-
-.imagenLogo{
-    width: auto;
-
-}
-.textoLogo{
-    margin: 1%;
-    text-align: center;
-    border-top: 3px solid;
-    border-bottom: 3px solid;
-    padding: 1%;
-}
 
 /* body index */
 body{
@@ -176,7 +98,10 @@ body{
     width: 100%;
     
 }
-
+ul li{
+    display: inline;
+    letter-spacing: 0.25rem;
+}
 nav.menuInferior{
     padding-top: 5%;
 }
@@ -192,6 +117,7 @@ nav.menuInferior ul li a span{
     font-size: 1.5rem;
     color: white;
 }
+
 .menuInferior ul li a:hover{
     color: crimson;
     font-weight: bold;
@@ -203,6 +129,7 @@ div.imagenLogoFoot{
 
 div.copy{
     padding: 2%;
+    color:#ffffff70
 }
 
 p.gracias{
@@ -386,7 +313,7 @@ li
 
 @media (min-width:200px) and (max-width:768px) {
 	
-    #logoNav{
+    .logoNav{
         flex-direction: column;
     }
     img.imgLogo{

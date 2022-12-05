@@ -52,7 +52,22 @@ table {
   border-spacing: 0;
 }
 
-/* Reset */
-* {
-  box-sizing: border-box;
+/* header */
+#header {
+  background-color: black;
+  height: auto;
+  color: white;
+  gap: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+#header .logoNav {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-left: 3%;
+  justify-content: space-between;
+}
+#header .logoNav img.imgLogo {
+  width: auto;
+  padding: 1%;
 }/*# sourceMappingURL=main.css.map */
