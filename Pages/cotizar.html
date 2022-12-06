@@ -1,136 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BodeGuíar</title>
-        <link rel="shortcut icon" href="../Imagenes/Icon/autoIcon.png" type="image/x-icon">
-        <link rel="stylesheet" href="../CSS/reset.css">
-        <!-- CSS bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <!-- CSS Propio -->
-        <link rel="stylesheet" href="../CSS/Style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    </head>
-    
-    <header>
-        <nav class="navbar navbar navbar-dark bg-black navbar-expand-lg p-4">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="logo" src="../Imagenes/Icon/BodeguiarIconC.png" alt="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon light"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link link-light active ps-5" aria-current="page" href="../index.html">Home <span> | </span><a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link link-light" href="./recorridos.html">Recorridos <span> | </span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link link-light" href="./cotizar.html">Cotizar servicio <span> | </span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link link-light" href="./nosotros.html">Nosotros <span> | </span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link link-light" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BodeGuíar</title>
+  <link rel="shortcut icon" href="../Imagenes/Icon/autoIcon.png" type="image/x-icon">
+  <!-- CSS bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- CSS Propio -->
+  <link rel="stylesheet" href="../Sass/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
 
-        <section id="modalidad">
-            <div>
-                <h2 class="titulo">MODALIDAD</h2>
-                <h1 class="reseñaModalidad">Eleji trasladarte por las bodegas de la forma que prefieras, disfruta el recorrido solo o acompañado</h1>
-            </div>
-            
-        </section>
+<body>
+  <header>
+    <nav class="navbar navbar navbar-dark bg-black navbar-expand-lg p-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo" src="../Imagenes/Icon/BodeguiarIconC.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-xl-5">
+            <li class="nav-item">
+              <a class="nav-link link-light active" aria-current="page" href="../index.html">Home <span class="navTop__barra"> |
+                </span><a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="./recorridos.html">Recorridos <span class="navTop__barra"> | </span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="./cotizar.html">Cotizar servicio <span class="navTop__barra"> | </span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="./nosotros.html">Nosotros <span class="navTop__barra"> | </span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <main id="cotizar">
+  </header>
 
+  <section id="modalidad">
+    <div>
+      <h2 class="titular__h2">MODALIDAD</h2>
+      <h1 class="titular__h1">Eleji trasladarte por las bodegas de la forma que prefieras, disfruta el recorrido
+        solo o acompañado.</h1>
+    </div>
 
-            <div class="individual">
-                <h3 class="tituloModalidad">Indivudual</h3>
-                <img class="imgModalidad" src="../Imagenes/Transporte/transporte-aeropuerto-1x.jpg" class="img-fluid" alt="individual">
-            </div>
+  </section>
 
-            <div class="textoMod">
-                <p>Opcion de viaje individual para hasta 4 personas, con el vehiculo a su disposición en todo momento. Podrá trasladarse por el camino elejido en el momento que desee. Contactenos para informar su reserva, deberá seleccionar la opción de viaje individual, cargará el camino del vino que desea realizar, la fecha y el punto desde el cual desea iniciar el recorrido.</p>
-            </div>
+  <main id="cotizar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 p-3 text-start">
+          <h3 class="titular__h3">Individual</h3>
+          <div class="col-lg-6 p-3 m-5 text-start">
+            <img class="imgModalidad" src="../Imagenes/Transporte/transporte-aeropuerto-1x.jpg" class="img-fluid"
+              alt="individual">
+          </div>
+          <div class="textoMod">
+            <p>Opción de viaje para los usuarios que quieran priorizar la comodidad, privacidad y el tiempo.</p>
+            <p>¿Cómo funciona?Al momento de solicitar un viaje, el cliente deberá seleccionar la opción de viaje
+              individual, cargará el camino del vino que desea realizar y la fecha</p>
+            <p>Posteriormente se le solicitará por correo electrónico la dirección de retiro, ya que con esta opción
+              cuentan con el sistema puerta-puerta, el chófer irá a recoger al pasajero en el domicilio que él indique,
+              y al regreso lo llevará a la dirección previamente establecida. </p>
+            <p> El horario de la excursión también es a convenir con el usuario y, con esta opción se podrá añadir hasta
+              2 paradas adicionales por recorrido.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 p-3">
+          <h3 class="titular__h3" class="text-center">Compartido</h3>
+          <div class="col-lg-6 p-3 m-5 text-start">
+            <img class="imgModalidad" src="../Imagenes/Transporte/compartido.jfif" class="img-fluid" alt="compartido">
+          </div>
+          <div class="textoComp">
+            <p>Opción de viaje para los usuarios que quieran ahorrar un 20% del valor del viaje, compartiendo su
+              recorrido con
+              otros usuarios.</p>
+            <p> ¿Cómo funciona?Al momento de solicitar un viaje, el cliente deberá seleccionar la opción de viaje
+              compartido,
+              cargará el camino del vino que desea realizar y la fecha. Los recorridos salen de un mismo punto en común
+              ya
+              establecido por la empresa.</p>
+            <p>Si se confirma que coincide con otra reserva para realizar el mismo recorrido, se les notificará por
+              correo.
+              La tarifa no se verá afectada en caso de que no haya coincidencia para compartir el viaje.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-            <div class="compartido">
-                <h3 class="tituloModalidad">Compartido</h3>
-                <img class="imgModalidad" src="../Imagenes/Transporte/compartido.jfif" class="img-fluid" alt="compartido">
-                
-            </div>
+  <section class="reservar">
+    <h3 class="tituloReserva">¿Como reservar?</h3>
 
-            <div class="textoComp">
-                <p>Opción de viaje para los usuarios que quieran ahorrar un 20% del valor del viaje, compartiendo su recorrido con otros usuarios.
-                    ¿Cómo funciona?Al momento de solicitar un viaje, el cliente deberá seleccionar la opción de viaje compartido, cargará el camino del vino que desea realizar y la fecha. Los recorridos salen de un mismo punto en común ya establecido por la empresa.
-                    Si se confirma que coincide con otra reserva para realizar el mismo recorrido, se les notificará por correo. 
-                    La tarifa no se verá afectada en caso de que no haya coincidencia para compartir el viaje.</p>
-            </div>
+    <ul class="list__reserva">
+      <li>- Elejí el <a href="../Pages/recorridos.html" target="_blank">recorrido</a> que más te guste.</li>
+      <li>- Selecciona la modalidad para tu viaje.</li>
+      <li>- Pulsa <a href="https://wa.me/542617027204?text=Hola,%20quiero%20cotizar%20un%20servicio"
+          target="_blank">"Cotizar este recorrido"</a> (Se te abrirá Whatsapp).</li>
+      <li>- Envianos el mensaje con recorrido deseado, te indicaremos los pasos para tu reserva.</li>
+      <li>- Te mostraremos qué métodos de pago que podés elegir.</li>
+    </ul>
 
-        </main>
+  </section>
 
-        <section class="container-fluid" class="reservar">
-            <h3 class="tituloReserva">¿Como reservar?</h3>
+  <footer id="footer">
+    <nav class="nav__foot">
+      <ul>
+        <li><a href="../index.html">Home <span>|</span></a></li>
+        <li><a href="./recorridos.html">Recorridos <span>|</span></a></li>
+        <li><a href="./cotizar.html">Cotizar servicio <span>|</span></a></li>
+        <li><a href="./nosotros.html">Nosotros <span>|</span></a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
 
-            <ul class="pasosReserva">
-                <li>- Elejí el <a href="../Pages/recorridos.html" target="_blank">recorrido</a> que más te guste.</li>
-                <li>- Selecciona la modalidad para tu viaje.</li>
-                <li>- Pulsa <a href="https://wa.me/542617027204?text=Hola,%20quiero%20cotizar%20un%20servicio" target="_blank">"Cotizar este recorrido"</a> (Se te abrirá Whatsapp).</li>
-                <li>- Envianos el mensaje con recorrido deseado, te indicaremos los pasos para tu reserva.</li>
-                <li>- Te mostraremos qué métodos de pago que podés elegir.</li>
-            </ul>
+    <div class="img__logFoot">
+      <img src="../Imagenes/Icon/Icon.jpeg" class="img-fluid" alt="Logo">
+    </div>
 
-        </section>
+    <p class="gracias">- Muchas gracias por visitarnos -</p>
 
-        <footer id="footer">
-            <nav class="menuInferior">
-                <ul>
-                    <li><a href="../index.html">Home <span>|</span></a></li>
-                    <li><a href="./recorridos.html">Recorridos <span>|</span></a></li>
-                    <li><a href="./cotizar.html">Cotizar servicio <span>|</span></a></li>
-                    <li><a href="./nosotros.html">Nosotros <span>|</span></a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+    <div class="copy">
+      <small><b>&copy;Copyright 2022 </b>- Bodeguiar -</small>
+      <div class="derechos">
+        <small>- Todos los derechos reservados -</small>
+      </div>
+    </div>
 
-            <div class="imagenLogoFoot">
-                <img src="../Imagenes/Icon/Icon.jpeg" class="img-fluid" alt="Logo">
-            </div>
+  </footer>
 
-            <p class="gracias">- Muchas gracias por visitarnos -</p>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
-            <div class="pago">
-                <img class="iconPago" src="../Imagenes/Medios de pago/visa.svg" alt="visa">
-                <img class="iconPago" src="../Imagenes/Medios de pago/american.svg" alt="amex">
-                <img class="iconPago" src="../Imagenes/Medios de pago/MercadoPago.svg" alt="MercadoPago">
-                <img class="iconPago" src="../Imagenes/Medios de pago/master.svg" alt="mastercard">
-                <img class="iconPago" src="../Imagenes/Medios de pago/PagoFacil.svg" alt="PagoFacil">
-                <img class="iconPago" src="../Imagenes/Medios de pago/Rapipago.svg" alt="Rapipago">
-                <img class="iconPago" src="../Imagenes/Medios de pago/bank.svg" alt="transferencia">
-            </div>
-
-            <div class="copy">
-                <small><b>&copy;Copyright 2022 </b>- Bodeguiar -</small>
-                <div class="derechos">
-                    <small>- Todos los derechos reservados -</small>
-                </div>
-            </div>
-
-        </footer>
-
-    </body>
+</body>
 
 </html>

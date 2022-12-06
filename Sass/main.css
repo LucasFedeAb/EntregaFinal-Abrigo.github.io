@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,22 +54,377 @@ table {
   border-spacing: 0;
 }
 
-/* header */
-#header {
-  background-color: black;
-  height: auto;
-  color: white;
-  gap: 2px;
-  font-family: "Montserrat", sans-serif;
+* {
+  box-sizing: border-box;
 }
-#header .logoNav {
-  display: flex;
+
+/* vars */
+/* cierre vars */
+/* footer */
+#footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+#footer .nav__foot {
+  padding-top: 5%;
+}
+#footer .nav__foot ul li {
+  display: inline;
+  letter-spacing: 0.25rem;
+}
+#footer .nav__foot ul li a {
+  text-decoration: none;
+  color: white;
+}
+#footer .nav__foot ul li a span {
+  font-size: 1.5rem;
+  color: white;
+}
+#footer .nav__foot ul li a:hover {
+  color: crimson;
+}
+#footer .img__logFoot {
+  padding: 1%;
+}
+#footer .copy {
+  padding: 2%;
+  color: rgba(255, 255, 255, 0.4392156863);
+}
+#footer .gracias {
+  font-size: 0.75rem;
+  letter-spacing: 0.2rem;
+}
+
+/* Responsive */
+@media (min-width: 200px) and (max-width: 768px) {
+  #servicio {
+    grid-template-rows: repeat 4, auto;
+    gap: 2%;
+  }
+  #servicio .imgChofer {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  #servicio .textoChofer {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  #servicio .imgCopas {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  #servicio .textoCopas {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+  .navTop__barra {
+    display: none;
+  }
+  img.imgNosotros {
+    margin: 0% 20%;
+    width: 60%;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 525px) {
+  #forms {
+    grid-template-columns: 1fr;
+  }
+  #multilinea {
+    width: 95%;
+  }
+  iframe.mapa {
+    width: 80%;
+  }
+  .imgModalidad {
+    width: 100%;
+  }
+}
+/* html */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* home */
+body {
+  width: 100%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../Imagenes/background/bg.jpg);
+}
+body #portada {
   width: 100%;
   height: auto;
-  padding-left: 3%;
-  justify-content: space-between;
+  background-color: black;
 }
-#header .logoNav img.imgLogo {
-  width: auto;
+body #portada .titulo__portada {
+  letter-spacing: 5rem;
+  font-size: 5rem;
+}
+body #portada .carousel-caption h5:hover {
+  color: gainsboro;
+}
+body #portada .winery {
+  font-size: 2rem;
+  letter-spacing: 2rem;
+  padding-top: 1rem;
+}
+body #tituloIndex {
+  margin: 2% 5%;
+  border: 3px solid;
+  border-radius: 5px;
+  background: linear-gradient(#621f80, #0c0808);
+}
+body #tituloIndex .titulo__servicio {
+  text-align: center;
+  padding: 1% 0%;
+}
+body #servicio {
+  display: grid;
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 2%;
+}
+body .imgChofer {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  padding: 5%;
+}
+body .imgChofer .img-fluid {
+  border-radius: 5px;
+}
+body .textoChofer {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+body .textoCopas {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: center;
+  padding: 5%;
+}
+body .imgCopas {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  padding: 5%;
+}
+body .imgCopas .img-fluid {
+  border-radius: 5px;
+}
+
+/* recorridos */
+#recorridos {
+  width: 100%;
+  height: auto;
+}
+#recorridos .titular__2 {
+  border: 2px solid;
+  border-radius: 5px;
+  background: linear-gradient(#621f80, #0c0808);
+  text-align: center;
+  font-size: 2rem;
+  margin: 2% 3%;
   padding: 1%;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.2rem;
+}
+#recorridos .titular__h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.circuito {
+  margin: 5% 1%;
+}
+.circuito:hover {
+  box-shadow: #664d03 1px 1px 35px 1px;
+  transition: all 1s;
+  background-image: url(../Imagenes/background/montaña.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  opacity: 0.7;
+  color: white;
+}
+.circuito .imgCircuito {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+.proximamente {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+/* cotizar ruta */
+#modalidad {
+  padding: 2%;
+}
+#modalidad h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 3%;
+}
+#modalidad .titular__h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+#cotizar {
+  justify-items: center;
+  width: 100%;
+  height: auto;
+  padding: 3%;
+}
+#cotizar .titular__h3 {
+  font-size: 2rem;
+  padding: 5% 2%;
+  text-align: center;
+}
+#cotizar .imgModalidad {
+  width: 450px;
+  height: 320px;
+  border-radius: 10px;
+}
+#cotizar .imgModalidad:hover {
+  box-shadow: #6c6c6c 1px 1px 35px 1px;
+  transition: all 0.3s;
+}
+#cotizar .textoMod p {
+  font-size: 1.2rem;
+  padding: 2%;
+}
+#cotizar .textoComp p {
+  font-size: 1.2rem;
+  padding: 2%;
+}
+
+.reservar {
+  padding: 7% 2%;
+  text-align: left;
+}
+.reservar .tituloReserva {
+  padding: 3%;
+  font-size: 1.5rem;
+}
+.reservar ul li {
+  display: block;
+  padding: 1%;
+  text-align: left;
+}
+.reservar ul li a {
+  color: crimson;
+}
+
+/* Nosotros */
+#nosotros {
+  width: 100%;
+  height: auto;
+}
+#nosotros .titular__nosotros {
+  font-size: 3rem;
+  padding: 2%;
+  text-align: center;
+}
+#nosotros p {
+  margin-top: 2%;
+  font-size: 2rem;
+}
+#nosotros img.imgNosotros {
+  border-radius: 5px;
+}
+
+.container__padd {
+  width: 100%;
+  height: 50vh;
+}
+
+/* Contacto */
+.calidad {
+  text-align: center;
+  padding: 2%;
+}
+
+#forms {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+#forms .name {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+#forms .email {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+#forms .mje {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+#forms .boton {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+#forms input {
+  background-color: hwb(185deg 83% 11%/9%);
+  border: 1px #7a7a83 solid;
+  border-radius: 5px;
+}
+#forms .boton input {
+  background-color: white;
+  color: black;
+}
+#forms .boton input.borrar:hover {
+  background-color: red;
+  color: whitesmoke;
+}
+#forms .boton input.enviar:hover {
+  background-color: green;
+  color: whitesmoke;
+}
+#forms input:hover {
+  color: black;
+  border: 1px #7a7a83 solid;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+#forms textarea {
+  color: whitesmoke;
+  border: 1px #7a7a83 solid;
+  border-radius: 5px;
+  background-color: hwb(185deg 83% 11%/9%);
+}
+
+.ubicacion {
+  margin-top: 10%;
+  padding-bottom: 3%;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

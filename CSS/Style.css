@@ -20,7 +20,7 @@ body{
     
 }
 
-.TituloPrincipal{
+.titulo__portada{
     letter-spacing: 5rem;
     font-size: 5rem;
 }
@@ -47,7 +47,7 @@ body{
     gap: 2px;
 }
 
-#titulo{
+#tituloIndex{
     margin: 2% 5%;
     border: 3px solid;
     border-radius: 50px;
@@ -55,7 +55,7 @@ body{
 }
 
 
-.tituloServicio{
+.titulo__servicio{
     text-align: center;
     padding: 1% 0%;
     
@@ -69,7 +69,6 @@ body{
 
 .textoChofer{
     grid-column: 2/3;
-    justify-self: center;
     align-self: center;
     padding-left: 5%;
     padding-right: 5%;
@@ -77,14 +76,13 @@ body{
 
 .textoCopas{
    grid-column: 1/2; 
-   justify-self: center;
    align-self: center;
    padding: 5%;
 }
 .imgCopas{
+    grid-column: 2/3;
     justify-self: center;
     padding: 5%;
-    border-radius: 20px;
 }
 
 
@@ -102,28 +100,27 @@ ul li{
     display: inline;
     letter-spacing: 0.25rem;
 }
-nav.menuInferior{
+nav.nav__foot{
     padding-top: 5%;
 }
 
-nav.menuInferior ul li a{
+nav.nav__foot ul li a{
     text-decoration: none;
     color: white;
-    width: 100%;
-    height: auto;
-    padding-top: 5%;
+    
+    
 }
-nav.menuInferior ul li a span{
+nav.nav__foot ul li a span{
     font-size: 1.5rem;
     color: white;
 }
 
-.menuInferior ul li a:hover{
+.nav__foot ul li a:hover{
     color: crimson;
     font-weight: bold;
     
 }
-div.imagenLogoFoot{
+div.img__logFoot{
     padding: 1%;
 }
 
@@ -134,7 +131,7 @@ div.copy{
 
 p.gracias{
     font-size: 0.75rem;
-    letter-spacing:2px;
+    letter-spacing:0.20rem;
 }
 
 
@@ -144,7 +141,7 @@ p.gracias{
     width: 100%;
     height: auto;
 }
-.titulo{
+.titular__2{
     border: 2px solid;
     border-radius: 50px;
     background: radial-gradient(#601382 ,#5a0707);
@@ -156,7 +153,7 @@ p.gracias{
     font-style: normal;
     letter-spacing: 0.20rem;
 }
-.reseñaBodega{
+.titular__h1{
     text-align: center;
 }
 
@@ -208,7 +205,7 @@ p.gracias{
     padding-right: 2%;
 }
 
-.tituloModalidad{
+.titular__h3{
     font-size: 2rem;
     padding: 5% 2%;
     text-align: center;
@@ -239,29 +236,29 @@ p.gracias{
 }
 
 .tituloReserva{
-    font-size: 1.25rem;
-    padding: 30px;
+    padding: 3%;
 }
-ul.pasosReserva li{
+
+ul.list__reserva li{
     display: block;
     padding: 1%;
     text-align: left;
-    list-style: circle;
-    
 }
-li
 
 /* Nosotros */
 #nosotros{
     width: 100%;
     height: auto;
 }
-.tituloNosotros{
+
+.titular__nosotros{
     font-size: 2rem;
     padding: 2%;
     text-align: center;
 }
-.padd{
+
+
+.container__padd{
     width: 100%;
     height: 50vh;
 }
@@ -282,8 +279,22 @@ li
     gap: 5%;
     justify-content: center;
     align-items: center;
-    
 }
+
+input:hover{
+    color: whitesmoke;
+    border: 1px #7a7a83 solid;
+    border-radius: 20px;
+    background-color: hwb(185deg 83% 11% / 9%);;
+}
+
+textarea{
+    color: whitesmoke;
+    border: 1px #7a7a83 solid;
+    border-radius: 20px;
+    background-color: hwb(185deg 83% 11% / 9%);
+}
+    
 
 .name{
     grid-row: 1/2;
@@ -312,20 +323,17 @@ li
 /* Responsive */
 
 @media (min-width:200px) and (max-width:768px) {
-	
-    .logoNav{
-        flex-direction: column;
-    }
-    img.imgLogo{
-        width: 30%;
-        height: 30%;
-        margin: 0% 35%;
-    }
+	/* index */
+
+    h5.titulo__portada{
+        font-size: 1.2rem;
+        font-weight: bold;
+   }
 
     #servicio{
         grid-template-columns: 1fr;
         grid-template-rows: (4,auto);
-        gap: 2px;
+        gap: 4%;
     }
     .imgChofer {
         grid-column: 1/2;
@@ -347,10 +355,7 @@ li
 }
 
 @media (max-width:1200px){
-   h5.TituloPrincipal{
-        font-size: 1rem;
-        font-weight: bold;
-   }
+
 
    #cotizar{
         grid-template-columns: 1fr;
