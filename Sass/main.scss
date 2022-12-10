@@ -19,6 +19,7 @@ h2 {
 
 body {
     width: 100%;
+    height: auto;
     color: white;
     font-family: 'Montserrat', sans-serif;
     background-image: url(../Imagenes/background/bg.jpg);
@@ -29,10 +30,6 @@ body {
         height: auto;
         background-color: black;
 
-        .titulo__portada {
-            letter-spacing: 5rem;
-            font-size: 5rem;
-        }
 
         .carousel-caption h5:hover {
             color: gainsboro
@@ -129,8 +126,12 @@ body {
     }
 
     .titular__h1 {
+        margin-top: 5% 2%;
         text-align: center;
         font-size: 1.5rem;
+        color: $colorH1;
+        padding: 0% 10%;
+        line-height: 150%;
     }
 }
 
@@ -143,7 +144,8 @@ body {
         background-repeat: no-repeat;
         background-position: bottom;
         opacity: 0.7;
-        color:white
+        color:white;
+        font-weight: bolder;
     }
     .imgCircuito {
         width: 100%;
@@ -162,18 +164,39 @@ body {
 /* cotizar ruta */
 
 #modalidad {
+    width: 100%;
+    height: auto;
     padding: 2%;
 
     h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
         padding: 3%;
+        border: 2px solid;
+        border-radius: 5px;
+        background: $colorGradient;
+        text-align: center;
+        margin: 2% 3%;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 0.20rem;
     }
 
+    
+        
     .titular__h1 {
+    
+        margin: 5% 2%;
         text-align: center;
         font-size: 1.8rem;
+        color:$colorH1;
+        padding: 0% 10%;
+        line-height: 150%;
+
     }
+    
+
+    
 }
 
 #cotizar {
@@ -187,13 +210,13 @@ body {
         font-size: 2rem;
         padding: 5% 2%;
         text-align: center;
+        border: 2px solid $colorGradient;
+        border-radius: 10px;
+        background: $colorGradient;
 
     }
 
     .imgModalidad {
-        width: 450px;
-        height: 320px;
-        border-radius: 10px;
 
         &:hover{
             box-shadow: #6c6c6c 1px 1px 35px 1px;
@@ -206,17 +229,11 @@ body {
 
         p {
             font-size: 1.2rem;
-            padding: 2%;
+            padding: 1%;
         }
 
     }
 
-    .textoComp {
-        p {
-            font-size: 1.2rem;
-            padding: 2%;
-        }
-    }
 }
 
 .reservar {
@@ -226,6 +243,7 @@ body {
     .tituloReserva {
         padding: 3%;
         font-size: 1.5rem;
+        color: $colorH1;
     }
 
     ul li {
@@ -249,14 +267,22 @@ body {
         font-size: 3rem;
         padding: 2%;
         text-align: center;
+        border: 2px solid white;
+        background-color: black;
+        color: $colorH1;
+    }
+    .h1{
+        color: $colorH1;
     }
 
     p {
         margin-top: 2%;
         font-size: 2rem;
+
     }
 
     img.imgNosotros{
+        margin-bottom: 5%;
         border-radius: 5px;
     }
 }
@@ -270,7 +296,12 @@ body {
 
 .calidad {
     text-align: center;
-    padding: 2%;
+    .tituloCalidad{
+        border: 2px solid white;
+        color:$colorH1;
+        background-color: black;
+        margin-bottom: 2%;
+    }
 }
 
 #forms {
@@ -282,7 +313,7 @@ body {
     gap: 10%;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    padding: 2%;
     
 
     .name {
@@ -309,20 +340,34 @@ body {
         background-color: $colorFormBg;
         border: 1px #7a7a83 solid;
         border-radius: 5px;
+        margin-bottom: 3%;
+        margin-right: 2%;
+    }
+
+    label{
+        margin-bottom: 3%;
+        margin-right: 2%;
     }
 
     .boton input {
         background-color: white;
         color: black;
+        padding: 1%;
+        
 
         &.borrar:hover {
             background-color: red;
             color: whitesmoke;
+            padding: 2%;
+            transition: all 0.3s;
+            
         }
 
         &.enviar:hover {
             background-color: green;
             color: whitesmoke;
+            padding: 2%;
+            transition: all 0.3s;
         }
     }
 
@@ -343,7 +388,7 @@ body {
 }
 
 .ubicacion {
-    margin-top: 10%;
+    margin-top: 15%;
     padding-bottom: 3%;
     font-size: 1.5rem;
 }

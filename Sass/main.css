@@ -98,10 +98,24 @@ table {
 }
 
 /* Responsive */
-@media (min-width: 200px) and (max-width: 768px) {
+@media (max-width: 525px) {
+  html {
+    font-size: 50%;
+  }
+  .logo {
+    width: 70%;
+  }
+  .navTop__barra {
+    display: none;
+  }
+  .titulo__portada {
+    letter-spacing: 1.5rem;
+    font-size: 2.5rem;
+  }
   #servicio {
     grid-template-rows: repeat 4, auto;
     gap: 2%;
+    margin-bottom: 10%;
   }
   #servicio .imgChofer {
     grid-column: 1/3;
@@ -119,23 +133,11 @@ table {
     grid-column: 1/3;
     grid-row: 4/5;
   }
-}
-@media (max-width: 1200px) {
-  html {
-    font-size: 80%;
+  #forms {
+    grid-template-columns: 1fr;
   }
   .navTop__barra {
     display: none;
-  }
-  img.imgNosotros {
-    margin: 0% 20%;
-    width: 60%;
-    border-radius: 5px;
-  }
-}
-@media (max-width: 525px) {
-  #forms {
-    grid-template-columns: 1fr;
   }
   #multilinea {
     width: 95%;
@@ -143,7 +145,98 @@ table {
   iframe.mapa {
     width: 80%;
   }
-  .imgModalidad {
+  #cotizar .imgModalidad {
+    width: 225px;
+    height: 160px;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 526px) and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .logo {
+    width: 80%;
+  }
+  .navTop__barra {
+    display: none;
+  }
+  .titulo__portada {
+    letter-spacing: 2rem;
+    font-size: 3rem;
+  }
+  #servicio {
+    grid-template-rows: repeat 4, auto;
+    gap: 2%;
+    margin-bottom: 10%;
+  }
+  #servicio .imgChofer {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  #servicio .textoChofer {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  #servicio .imgCopas {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  #servicio .textoCopas {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  #cotizar .imgModalidad {
+    width: 380px;
+    height: 250px;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+  .navTop__barra {
+    display: none;
+  }
+  .logo {
+    width: 90%;
+  }
+  .titulo__portada {
+    letter-spacing: 2.5rem;
+    font-size: 4rem;
+  }
+  img.imgNosotros {
+    margin: 0% 20%;
+    width: 60%;
+    border-radius: 5px;
+  }
+  #servicio {
+    margin-bottom: 2%;
+  }
+  #cotizar .imgModalidad {
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 1201px) {
+  html {
+    font-size: 100%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .titulo__portada {
+    letter-spacing: 5rem;
+    font-size: 5rem;
+  }
+  #cotizar .imgModalidad {
+    width: 450px;
+    height: 320px;
+    border-radius: 10px;
+  }
+  .imgNosotros {
     width: 100%;
   }
 }
@@ -159,6 +252,7 @@ h2 {
 /* home */
 body {
   width: 100%;
+  height: auto;
   color: white;
   font-family: "Montserrat", sans-serif;
   background-image: url(../Imagenes/background/bg.jpg);
@@ -167,10 +261,6 @@ body #portada {
   width: 100%;
   height: auto;
   background-color: black;
-}
-body #portada .titulo__portada {
-  letter-spacing: 5rem;
-  font-size: 5rem;
 }
 body #portada .carousel-caption h5:hover {
   color: gainsboro;
@@ -249,8 +339,12 @@ body .imgCopas .img-fluid {
   letter-spacing: 0.2rem;
 }
 #recorridos .titular__h1 {
+  margin-top: 5% 2%;
   text-align: center;
   font-size: 1.5rem;
+  color: #ba00ba;
+  padding: 0% 10%;
+  line-height: 150%;
 }
 
 .circuito {
@@ -264,6 +358,7 @@ body .imgCopas .img-fluid {
   background-position: bottom;
   opacity: 0.7;
   color: white;
+  font-weight: bolder;
 }
 .circuito .imgCircuito {
   width: 100%;
@@ -279,16 +374,30 @@ body .imgCopas .img-fluid {
 
 /* cotizar ruta */
 #modalidad {
+  width: 100%;
+  height: auto;
   padding: 2%;
 }
 #modalidad h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   padding: 3%;
+  border: 2px solid;
+  border-radius: 5px;
+  background: linear-gradient(#621f80, #0c0808);
+  text-align: center;
+  margin: 2% 3%;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.2rem;
 }
 #modalidad .titular__h1 {
+  margin: 5% 2%;
   text-align: center;
   font-size: 1.8rem;
+  color: #ba00ba;
+  padding: 0% 10%;
+  line-height: 150%;
 }
 
 #cotizar {
@@ -301,11 +410,9 @@ body .imgCopas .img-fluid {
   font-size: 2rem;
   padding: 5% 2%;
   text-align: center;
-}
-#cotizar .imgModalidad {
-  width: 450px;
-  height: 320px;
+  border: 2px solid linear-gradient(#621f80, #0c0808);
   border-radius: 10px;
+  background: linear-gradient(#621f80, #0c0808);
 }
 #cotizar .imgModalidad:hover {
   box-shadow: #6c6c6c 1px 1px 35px 1px;
@@ -313,11 +420,7 @@ body .imgCopas .img-fluid {
 }
 #cotizar .textoMod p {
   font-size: 1.2rem;
-  padding: 2%;
-}
-#cotizar .textoComp p {
-  font-size: 1.2rem;
-  padding: 2%;
+  padding: 1%;
 }
 
 .reservar {
@@ -327,6 +430,7 @@ body .imgCopas .img-fluid {
 .reservar .tituloReserva {
   padding: 3%;
   font-size: 1.5rem;
+  color: #ba00ba;
 }
 .reservar ul li {
   display: block;
@@ -346,12 +450,19 @@ body .imgCopas .img-fluid {
   font-size: 3rem;
   padding: 2%;
   text-align: center;
+  border: 2px solid white;
+  background-color: black;
+  color: #ba00ba;
+}
+#nosotros .h1 {
+  color: #ba00ba;
 }
 #nosotros p {
   margin-top: 2%;
   font-size: 2rem;
 }
 #nosotros img.imgNosotros {
+  margin-bottom: 5%;
   border-radius: 5px;
 }
 
@@ -363,7 +474,12 @@ body .imgCopas .img-fluid {
 /* Contacto */
 .calidad {
   text-align: center;
-  padding: 2%;
+}
+.calidad .tituloCalidad {
+  border: 2px solid white;
+  color: #ba00ba;
+  background-color: black;
+  margin-bottom: 2%;
 }
 
 #forms {
@@ -375,7 +491,7 @@ body .imgCopas .img-fluid {
   gap: 10%;
   justify-content: center;
   align-items: center;
-  margin-top: 2%;
+  padding: 2%;
 }
 #forms .name {
   grid-row: 1/2;
@@ -397,18 +513,29 @@ body .imgCopas .img-fluid {
   background-color: hwb(185deg 83% 11%/9%);
   border: 1px #7a7a83 solid;
   border-radius: 5px;
+  margin-bottom: 3%;
+  margin-right: 2%;
+}
+#forms label {
+  margin-bottom: 3%;
+  margin-right: 2%;
 }
 #forms .boton input {
   background-color: white;
   color: black;
+  padding: 1%;
 }
 #forms .boton input.borrar:hover {
   background-color: red;
   color: whitesmoke;
+  padding: 2%;
+  transition: all 0.3s;
 }
 #forms .boton input.enviar:hover {
   background-color: green;
   color: whitesmoke;
+  padding: 2%;
+  transition: all 0.3s;
 }
 #forms input:hover {
   color: black;
@@ -424,7 +551,7 @@ body .imgCopas .img-fluid {
 }
 
 .ubicacion {
-  margin-top: 10%;
+  margin-top: 15%;
   padding-bottom: 3%;
   font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

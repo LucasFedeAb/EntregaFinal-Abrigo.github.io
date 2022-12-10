@@ -1,12 +1,27 @@
 /* Responsive */
 
+@media (max-width:525px) {
 
-@media (min-width:200px) and (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    .logo{
+        width: 70%;
+    }
+    .navTop__barra {
+        display: none;
+    }
 
+    .titulo__portada {
+        letter-spacing: 1.5rem;
+        font-size: 2.5rem;
+    }
 
     #servicio {
         grid-template-rows: repeat (4, auto);
         gap: 2%;
+        margin-bottom: 10%;
+        
 
         & .imgChofer {
             grid-column: 1/3;
@@ -29,31 +44,12 @@
         }
     }
 
-}
-
-
-@media (max-width:1200px) {
-
-    html {
-        font-size: 80%;
+    #forms {
+        grid-template-columns: 1fr;
     }
 
     .navTop__barra {
         display: none;
-    }
-
-    img.imgNosotros {
-        margin: 0% 20%;
-        width: 60%;
-        border-radius: 5px;
-    }
-}
-
-@media (max-width:525px) {
-
-
-    #forms {
-        grid-template-columns: 1fr;
     }
 
     #multilinea {
@@ -65,9 +61,119 @@
         width: 80%;
     }
 
+    #cotizar .imgModalidad {
+        width: 225px;
+        height: 160px;
+        border-radius: 10px;
+    }
+}
 
-    .imgModalidad {
+@media (min-width:526px) and (max-width:768px) {
+    html{
+        font-size: 60%;
+    }
+    .logo{
+        width: 80%;
+    }
+
+    .navTop__barra {
+        display: none;
+    }
+    .titulo__portada {
+        letter-spacing: 2rem;
+        font-size: 3rem;
+    }
+
+    #servicio {
+        grid-template-rows: repeat (4, auto);
+        gap: 2%;
+        margin-bottom: 10%;
+
+        & .imgChofer {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        & .textoChofer {
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+
+        & .imgCopas {
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+
+        & .textoCopas {
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+    }
+
+    #cotizar .imgModalidad {
+        width: 380px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    
+
+}
+
+
+@media (min-width:769px) and (max-width:1200px) {
+
+    html{
+        font-size: 80%;
+    }
+    .navTop__barra {
+        display: none;
+    }
+    .logo{
+        width: 90%;
+    }
+    .titulo__portada {
+        letter-spacing: 2.5rem;
+        font-size: 4rem;
+    }
+
+    img.imgNosotros {
+        margin: 0% 20%;
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    #servicio{
+        margin-bottom: 2%;
+    }
+
+    #cotizar .imgModalidad {
+        width: 400px;
+        height: 280px;
+        border-radius: 10px;
+    }
+
+}
+
+@media (min-width:1201px){
+    html{
+        font-size: 100%;
+    }
+    .logo{
         width: 100%;
     }
 
+    .titulo__portada {
+        letter-spacing: 5rem;
+        font-size: 5rem;
+    }
+
+    #cotizar .imgModalidad {
+        width: 450px;
+        height: 320px;
+        border-radius: 10px;
+    }
+
+    .imgNosotros{
+        width: 100%;
+    }
 }
