@@ -133,6 +133,9 @@ table {
     grid-column: 1/3;
     grid-row: 4/5;
   }
+  img.footLog {
+    width: 25%;
+  }
   #forms {
     grid-template-columns: 1fr;
   }
@@ -342,7 +345,7 @@ body .imgCopas .img-fluid {
   margin-top: 5% 2%;
   text-align: center;
   font-size: 1.5rem;
-  color: #ba00ba;
+  color: #a596cf;
   padding: 0% 10%;
   line-height: 150%;
 }
@@ -381,7 +384,7 @@ body .imgCopas .img-fluid {
 #modalidad h2 {
   font-size: 2.5rem;
   text-align: center;
-  padding: 3%;
+  padding: 1% 3%;
   border: 2px solid;
   border-radius: 5px;
   background: linear-gradient(#621f80, #0c0808);
@@ -395,7 +398,7 @@ body .imgCopas .img-fluid {
   margin: 5% 2%;
   text-align: center;
   font-size: 1.8rem;
-  color: #ba00ba;
+  color: #a596cf;
   padding: 0% 10%;
   line-height: 150%;
 }
@@ -430,7 +433,7 @@ body .imgCopas .img-fluid {
 .reservar .tituloReserva {
   padding: 3%;
   font-size: 1.5rem;
-  color: #ba00ba;
+  color: #a596cf;
 }
 .reservar ul li {
   display: block;
@@ -452,10 +455,10 @@ body .imgCopas .img-fluid {
   text-align: center;
   border: 2px solid white;
   background-color: black;
-  color: #ba00ba;
+  color: #a596cf;
 }
 #nosotros .h1 {
-  color: #ba00ba;
+  color: #a596cf;
 }
 #nosotros p {
   margin-top: 2%;
@@ -477,9 +480,10 @@ body .imgCopas .img-fluid {
 }
 .calidad .tituloCalidad {
   border: 2px solid white;
-  color: #ba00ba;
+  color: #a596cf;
   background-color: black;
   margin-bottom: 2%;
+  padding: 2%;
 }
 
 #forms {
