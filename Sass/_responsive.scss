@@ -70,6 +70,7 @@
         height: 160px;
         border-radius: 10px;
     }
+
 }
 
 @media (min-width:526px) and (max-width:768px) {
@@ -141,10 +142,11 @@
     }
 
     img.imgNosotros {
-        margin: 0% 20%;
-        width: 60%;
-        border-radius: 5px;
+        margin: 0% 25%;
+        width: 50%;
+        padding-top: 2%;
     }
+
 
     #servicio{
         margin-bottom: 2%;

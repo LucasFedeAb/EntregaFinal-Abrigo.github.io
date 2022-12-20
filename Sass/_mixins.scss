@@ -1,0 +1,12 @@
+/* Mixins */
+
+@mixin btn($colorText, $bgColor){
+    display: inline-block;
+    border: 1px #7a7a83 solid;
+    border-radius: 5px;
+    margin-bottom: 3%;
+    margin-right: 2%;
+    padding: 2%;
+    color:$colorText;
+    background-color: $bgColor;
+}
